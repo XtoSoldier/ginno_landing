@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "icon": "MenuBook",
+      "label": "Carta",
+      "title": "Carta Digital",
+      "description": "Permite a los clientes explorar el menú desde su dispositivo móvil de forma interactiva, con imágenes, descripciones y precios siempre actualizados."
+    },
+    {
+        "id": 2,
+        "icon": "RestaurantMenu",
+        "label": "Pedidos",
+        "title": "Gestión de Pedidos",
+        "description": "Permite a los clientes realizar pedidos fácilmente desde su mesa o en línea."
+    },
+    {
+        "id": 4,
+        "icon": "Payment",
+        "label": "Pagos",
+        "title": "Pagos Digitales",
+        "description": "Facilita el pago desde el móvil con integración de múltiples medios de pago."
+    },
+    {
+        "id": 3,
+        "icon": "EventAvailable",
+        "label": "Reservas",
+        "title": "Reservas Inteligentes",
+        "description": "Optimiza la ocupación de mesas y gestiona reservas desde cualquier dispositivo."
+    }
+]

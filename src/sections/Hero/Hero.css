@@ -1,0 +1,79 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  background-image: url("https://pixabay.com/get/gd080742777204825be13904bb8cf37aef3375533044e18b630516b91f3197fbf955b27abc1550aabc85efc2e34a80beffe0eb1e5959e6b5fbefaecf26f014b4b_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-title {
+  font-size: 5rem !important;
+  margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem !important;
+    margin-top: 1rem;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.hero-btn-primary {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 50px !important;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+  background-color: #e0e0e0 !important;
+}
+
+.hero-btn-secondary {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  border-radius: 50px !important;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
