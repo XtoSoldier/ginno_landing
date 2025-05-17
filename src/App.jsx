@@ -17,7 +17,7 @@ function App() {
       </Box>
       <Box ref={contactRef}>
         <ContactUs />
-      </Box>      
+      </Box>
       <Footer />
     </Box>
   )

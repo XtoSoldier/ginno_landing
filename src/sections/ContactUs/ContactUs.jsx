@@ -15,8 +15,16 @@ const ContactUs = () => {
   const [severity, setSeverity] = useState('success')
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
+  const [isHuman, setIsHuman] = useState(false)
 
-
+  const isFormValid =
+  formData.user_name !== ''  &&
+  formData.user_email !== '' &&
+  formData.user_phone !== '' &&
+  formData.user_message !== '';
+   // &&
+  // isHuman;
+  
   const form = useRef()
     const sendEmail = e => {
     e.preventDefault()
@@ -95,7 +103,7 @@ const ContactUs = () => {
           Contáctanos
         </Typography>
         <Typography variant="h6" align="center" gutterBottom>
-          Podes solicitar una demo o acercarnos cualquier consulta
+          Podés solicitar una demo o acercarnos cualquier consulta
         </Typography>
 
         <TextField 
@@ -150,7 +158,12 @@ const ContactUs = () => {
         />
 
         <Box textAlign="center">
-          <Button variant="contained" className="contact-button" type="submit">
+          <Button 
+            variant="contained"
+            className="contact-button" 
+            type="submit"   
+            disabled={!isFormValid}
+          >
             {loading ? <CircularProgress size={24} /> : 'Enviar'}
           </Button>
         </Box>

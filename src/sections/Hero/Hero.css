@@ -5,17 +5,18 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   text-align: center;
-  padding: 2rem;
   background: #000;
   color: #fff;
-  background-image: url("https://pixabay.com/get/gd080742777204825be13904bb8cf37aef3375533044e18b630516b91f3197fbf955b27abc1550aabc85efc2e34a80beffe0eb1e5959e6b5fbefaecf26f014b4b_1280.jpg");
+  /* background-image: url("../../assets/images/hotel-1191725.jpg");
+  background-image: url("../../assets/images/hotel-1191725_1280.jpg"); */
+  background-image: url("../../assets/images/hotel-1191725_1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  z-index: 0;
+  z-index: 0; 
 }
 
 .hero-title {

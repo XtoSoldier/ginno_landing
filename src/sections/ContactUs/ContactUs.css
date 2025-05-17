@@ -1,8 +1,8 @@
 .contact-section {
-  width: 100%;
+  padding-top: 3rem;
+  height: 100vh;
   background-color: #434141;
   color: #fff;
-  padding: 4rem 1rem;
 }
 
 .contact-form-container {
